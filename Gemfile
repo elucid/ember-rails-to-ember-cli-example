@@ -40,3 +40,5 @@ gem 'spring',        group: :development
 
 gem 'ember-rails'
 gem 'ember-source', '1.6.0'
+
+gem 'es6_module_transpiler-rails'

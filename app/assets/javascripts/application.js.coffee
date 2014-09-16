@@ -2,9 +2,14 @@
 #= require handlebars
 #= require ember
 #= require ember-data
+#= require loader
+#= require ember-resolver
+#= require ./resolver
 #= require_self
 #= require es6_spike
 
-# for more details see: http://emberjs.com/guides/application/
-window.Es6Spike = Ember.Application.create()
+Resolver = require('es6-spike/resolver').default
 
+window.Es6Spike = Ember.Application.create
+  modulePrefix: 'es6-spike'
+  Resolver: Resolver
